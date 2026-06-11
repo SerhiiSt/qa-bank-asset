@@ -218,12 +218,21 @@ Validation Error
 
 ## TC-007 Negative Price
 
+### _Input_
+```text
+Price = -100
+```
+
 ### _Expected:_
 ```text
 Validation Error
 ```
 
 ## TC-008 Empty Inputs
+### _Input_
+```text
+
+```
 
 ### _Expected:_
 ```text
