@@ -10,6 +10,7 @@ import service.RebalanceService;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Validates the core application output: the number of shares to BUY or SELL
@@ -142,9 +143,5 @@ class RebalanceServiceOutputTest {
 
     private int sharesIfAction(RebalanceResult result, TradeAction action) {
         return result.action() == action ? result.shares() : 0;
-    }
-
-    private static void assertTrue(boolean condition, String message) {
-        org.junit.jupiter.api.Assertions.assertTrue(condition, message);
     }
 }
