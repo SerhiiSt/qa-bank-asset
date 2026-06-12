@@ -11,6 +11,10 @@ public class RebalanceService {
             double variancePercent,
             double unitPrice) {
 
+        if (symbol == null || symbol.isBlank()) {
+            throw new IllegalArgumentException("Symbol is required");
+        }
+
         if (unitPrice <= 0) {
             throw new IllegalArgumentException(
                     "Unit price must be greater than zero");
